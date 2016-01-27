@@ -171,7 +171,8 @@ bool SlamDriver::init(void)
 
 	setActiveWindow(mWindows[0].get());
 
-	disableARCube();
+	setARCube(cv::Point3f(0, 0,10), cv::Point3f(0.1, 0, 0), cv::Point3f(0, 0.1, 0), cv::Point3f(0, 0, 0.1));
+	//disableARCube();
 
     glEnable(GL_POINT_SMOOTH);
     glEnable(GL_LINE_SMOOTH);
