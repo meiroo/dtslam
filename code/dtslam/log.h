@@ -25,7 +25,8 @@
 // The define below enables logging!
 // Note: each log call takes a lock on a mutex due to multi-threading. Thus, logging considerably reduces performance!
 // 		 We probably should switch to glog.
-#define ENABLE_LOG
+
+//#define ENABLE_LOG
 
 #ifdef ENABLE_LOG
 	#define DTSLAM_LOG (dtslam::Log(__FILE__, __LINE__, __FUNCTION__))

@@ -54,7 +54,7 @@ namespace dtslam
 {
 SlamDriver::SlamDriver()
         : mInitialized(false), mFrameCount(0), mQuit(false),
-          mFrameByFrame(true), mAdvanceFrame(false), mShowProfiler(true), mShowProfilerTotals(false),
+          mFrameByFrame(false), mAdvanceFrame(false), mShowProfiler(true), mShowProfilerTotals(false),
           mActiveWindow(NULL), mKeyBindings(this),
 		  mRecordFrames(false)
 

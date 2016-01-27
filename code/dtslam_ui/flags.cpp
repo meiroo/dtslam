@@ -13,7 +13,7 @@
 
 namespace dtslam
 {
-	DEFINE_int32(DriverCameraId, -1, "Id of the camera to open (OpenCV). 0 is the first camera.");
+	DEFINE_int32(DriverCameraId, 1, "Id of the camera to open (OpenCV). 0 is the first camera.");
 	DEFINE_string(DriverDataPath, "assets", "Path to all data files (videos and image sequences)");
 	DEFINE_string(DriverVideoFile, "translation.mp4", "Name of the video file to use (e.g. translation.mp4). This is appended to the data path. If both VideoFile and SequenceFormat are empty, the camera is used.");
 	DEFINE_string(DriverSequenceFormat, "", "sprintf format for the sequence (e.g. \"/cityOfSights/CS_BirdsView_L0/Frame_%.5d.jpg\". This is appended to the data path. If both VideoFile and SequenceFormat are empty, the camera is used.");

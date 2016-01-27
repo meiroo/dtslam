@@ -13,12 +13,12 @@
 
 namespace dtslam
 {
-	DEFINE_double(CameraFx, 1759.9583, "Camera focal length along X.");
-	DEFINE_double(CameraFy, 1758.2239, "Camera focal length along Y.");
-	DEFINE_double(CameraU0, 963.80029, "Camera principal point X.");
-	DEFINE_double(CameraV0, 541.04811, "Camera principal point Y.");
-	DEFINE_int32(CameraWidth, 1920, "Camera image width.");
-	DEFINE_int32(CameraHeight, 1080, "Camera image height.");
+	DEFINE_double(CameraFx, 805.71624755859375, "Camera focal length along X.");
+	DEFINE_double(CameraFy, 803.2288818359375, "Camera focal length along Y.");
+	DEFINE_double(CameraU0, 320.2747802734375, "Camera principal point X.");
+	DEFINE_double(CameraV0, 227.94172668457031, "Camera principal point Y.");
+	DEFINE_int32(CameraWidth, 640, "Camera image width.");
+	DEFINE_int32(CameraHeight, 480, "Camera image height.");
 
 	DEFINE_double(CameraK1, 0.16262, "Camera radial distortion coefficient 1.");
 	DEFINE_double(CameraK2, 0.67445, "Camera radial distortion coefficient 2.");
@@ -26,7 +26,7 @@ namespace dtslam
 
 	DEFINE_int32(PyramidMaxTopLevelWidth, 240, "Maximum width of the highest pyramid level for a frame.");
 	DEFINE_int32(SBIMaxWidth, 60, "Maximum width for the Small Blurry Image, input will be downsampled until width is less than this.");
-	DEFINE_int32(FASTThreshold, 10, "Threshold for the FAST keypoint detector");
+	DEFINE_int32(FASTThreshold, 30, "Threshold for the FAST keypoint detector");
 	DEFINE_int32(FrameKeypointGridSize, 30, "The grid size used to sort keypoints in the frame");
 
 
@@ -34,8 +34,8 @@ namespace dtslam
 	DEFINE_double(MinDepth, 1.0, "Minimum valid depth for a feature.");
 
 
-	DEFINE_int32(TrackerMaxFeatures, 400, "Max number of features to search for in all levels.");
-	DEFINE_int32(TrackerMaxFeaturesPerOctave, 500, "Max number of features to search for in each levels.");
+	DEFINE_int32(TrackerMaxFeatures, 200, "Max number of features to search for in all levels.");
+	DEFINE_int32(TrackerMaxFeaturesPerOctave, 200, "Max number of features to search for in each levels.");
 	DEFINE_int32(TrackerMinMatchCount, 20, "Minimum number of matches that must be found in order to compute a pose. If less are found tracking is aborted.");
 
 	DEFINE_int32(TrackerSelectFeaturesGridSize, 30, "Grid size for the select feature indexer.");
